@@ -68,3 +68,9 @@ sd_weight <- sd(starwars$mass, na.rm = TRUE)
 sd_height
 sd_weight
 ```
+
+### In line reporting using code outputs
+
+The mean of the distribution is `r mean_height` cm
+
+with a standard dev of `r sd_height` cm
