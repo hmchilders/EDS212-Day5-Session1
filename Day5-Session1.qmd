@@ -1,8 +1,50 @@
 ---
 title: "Day 5 Session 1"
 author: "Heather Childers"
-format: html
+format: 
+    html:  
+      code-fold: true
+      code-summary: "show me the code"
 editor: visual
+
+execute: 
+  warning: false
 ---
 
+YAML:
+
+execute: Warning: false (removes warnings from rendered document)
+
 ## Probability and Stats
+
+```{r}
+library(tidyverse)
+```
+
+### Star Wars Dataset
+
+-   Look at the first 6 lines of code
+
+-   find the dimensions of starwars
+
+-   make a histogram of character heights
+
+-   make a scatterplot of height vs weight
+
+```{r}
+head(starwars)
+
+dim(starwars)
+```
+
+```{r}
+ggplot(data=starwars, aes(x = height)) +
+  geom_histogram()
+
+
+```
+
+```{r}
+ggplot(data=starwars, aes(x=height, y=mass))+
+  geom_point()
+```
