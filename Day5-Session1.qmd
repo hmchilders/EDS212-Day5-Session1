@@ -1,0 +1,8 @@
+---
+title: "Day 5 Session 1"
+author: "Heather Childers"
+format: html
+editor: visual
+---
+
+## Probability and Stats
