@@ -48,3 +48,23 @@ ggplot(data=starwars, aes(x = height)) +
 ggplot(data=starwars, aes(x=height, y=mass))+
   geom_point()
 ```
+
+### Calculate Summary Statistics
+
+mean()
+
+sd()
+
+```{r}
+mean_height <- mean(starwars$height, na.rm = TRUE)
+mean_weight <- mean(starwars$mass, na.rm = TRUE)
+
+mean_height
+mean_weight
+
+sd_height <- sd(starwars$height, na.rm = TRUE )
+sd_weight <- sd(starwars$mass, na.rm = TRUE)
+
+sd_height
+sd_weight
+```
